@@ -12,20 +12,18 @@
         android:src="@drawable/flogo"
         tools:layout_editor_absoluteX="2dp"
         tools:layout_editor_absoluteY="-2dp" />
-
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="E-Mail Address"
+        android:hint="@string/e_mail_address"
         android:inputType="textEmailAddress"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="307dp" />
-
     <EditText
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="wrap_content"
@@ -39,7 +37,6 @@
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
-
     <Button
         android:id="@+id/forgotPW"
         android:layout_width="150dp"
@@ -53,12 +50,11 @@
     <Button
         android:layout_width="104dp"
         android:layout_height="36dp"
-        android:text="Sign Up"
+        android:text="@string/sign_up"
         android:textColor="@color/white"
         android:textSize="12sp"
         tools:layout_editor_absoluteX="241dp"
         tools:layout_editor_absoluteY="458dp" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"

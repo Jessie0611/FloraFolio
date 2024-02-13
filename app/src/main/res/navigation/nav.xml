@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav"
-    app:startDestination="@id/RoseFragment">
+    app:startDestination=".MainActivity">
 
     <fragment
         android:id="@+id/RoseFragment"
@@ -16,4 +16,9 @@
         android:name="com.hfad.florafolio.LavenderFragment"
         android:label="Help"
         tools:layout="@layout/fragment_lavender" />
+
+    <fragment
+        android:id="@+id/AccountFragment"
+        android:name="com.hfad.florafolio.AccountFragment"
+        android:label="@string/Account" />
 </navigation>
