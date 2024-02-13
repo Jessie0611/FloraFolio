@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/HoyaFragment"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:title="@string/hoya" />
+        <item
+            android:id="@+id/LavenderFragment"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="@string/Lavender" />
+        <item
+            android:id="@+id/RoseFragment"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="@string/Rose" />
+    </group>
+</menu>
