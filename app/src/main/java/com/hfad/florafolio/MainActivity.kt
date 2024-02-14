@@ -14,7 +14,6 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.ui.NavigationUI
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.appbar.MaterialToolbar
-
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -16,7 +16,6 @@
         android:name="com.hfad.florafolio.LavenderFragment"
         android:label="Help"
         tools:layout="@layout/fragment_lavender" />
-
     <fragment
         android:id="@+id/AccountFragment"
         android:name="com.hfad.florafolio.AccountFragment"
