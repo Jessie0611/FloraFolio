@@ -5,55 +5,28 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [LavenderFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class LavenderFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_lavender, container, false)
-    }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment LavenderFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            LavenderFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+        val view = inflater.inflate(R.layout.fragment_lavender, container, false)
+
+        // Find the TextView by ID
+        val dynamicTextView: TextView = view.findViewById(R.id.dynamicTextView)
+
+        // Set the text dynamically
+        dynamicTextView.text = "Lavender (genus Lavandula) is a popular and aromatic herb known for its fragrant flowers and various uses.\n" +
+                " Lavender is well-suited for cultivation in areas with well-drained soil and plenty of sunlight. It is a hardy plant and is often grown in gardens, borders, or as ornamental plants in landscaping." +
+                "\n\n Aromatherapy: Lavender essential oil is known for its calming and soothing properties. It is often used in aromatherapy to promote relaxation and alleviate stress.\n" +
+                " Culinary: Some lavender varieties are used in culinary applications, adding a subtle floral flavor to dishes and desserts. However, not all lavender is suitable for consumption, so it's important to use varieties specifically labeled as culinary lavender.\n" +
+                " Medicinal: Lavender has been used in traditional medicine for its potential anti-inflammatory and antimicrobial properties. Symbolism: Lavender is often associated with calmness, purity, and devotion. It has been used in various cultures for its symbolic and medicinal significance. Some well-known lavender varieties include Lavandula angustifolia (English lavender), Lavandula x intermedia (Lavandin), and Lavandula stoechas (Spanish lavender). Lavender is not only appreciated for its beauty but also for its versatility in various applications, making it a beloved plant in gardens and households worldwide."
+
+        return view
     }
 }
+

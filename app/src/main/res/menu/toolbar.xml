@@ -2,9 +2,11 @@
 <menu
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <item
-        android:id="@+id/helpFragment"
-        android:icon="@android:drawable/ic_menu_help"
-        android:title="Help"
+        android:id="@+id/accountFragment"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:title="Account"
         app:showAsAction="always" />
+
 </menu>

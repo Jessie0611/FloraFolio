@@ -4,8 +4,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav"
-    app:startDestination="@id/AccountFragment">
-
+    app:startDestination="@+id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.hfad.florafolio.LoginFragment"
+        android:label="LoginFragment"/>
+    <fragment
+        android:id="@+id/AccountFragment"
+        android:name="com.hfad.florafolio.AccountFragment"
+        android:label="@string/Account" />
     <fragment
         android:id="@+id/RoseFragment"
         android:name="com.hfad.florafolio.RoseFragment"
@@ -16,8 +23,5 @@
         android:name="com.hfad.florafolio.LavenderFragment"
         android:label="Help"
         tools:layout="@layout/fragment_lavender" />
-    <fragment
-        android:id="@+id/AccountFragment"
-        android:name="com.hfad.florafolio.AccountFragment"
-        android:label="@string/Account" />
+
 </navigation>
