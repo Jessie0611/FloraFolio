@@ -23,7 +23,7 @@
         tools:layout_editor_absoluteY="-2dp"/>
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/emailAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:autofillHints=""
@@ -38,7 +38,7 @@
         tools:layout_editor_absoluteY="307dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
