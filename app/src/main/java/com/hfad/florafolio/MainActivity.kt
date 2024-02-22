@@ -27,13 +27,14 @@ class MainActivity : AppCompatActivity() {
         if (navHostFragment != null) {
             setupNavController(toolbar, navHostFragment)
         } else {
-            // Handle the case where the fragment is not found
             Log.e("MainActivity", "NavHostFragment not found")
         }
     }
 
     private fun setupNavController(toolbar: MaterialToolbar, navHostFragment: NavHostFragment) {
         val navController = navHostFragment.navController
+        navController.navigate(R.id.LoginFragment)
+
         val builder = AppBarConfiguration.Builder(navController.graph)
         val appBarConfiguration = builder.build()
         toolbar.setupWithNavController(navController, appBarConfiguration)
