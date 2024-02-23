@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginFragment">
+
     <fragment
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
@@ -13,14 +14,16 @@
         android:layout_height="match_parent"
         app:defaultNavHost="true"
         app:navGraph="@navigation/nav"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="34dp" />
+
     <ImageView
-        android:layout_width="407dp"
-        android:layout_height="297dp"
+        android:layout_width="404dp"
+        android:layout_height="265dp"
         android:src="@drawable/flogo"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="-2dp"/>
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/emailAddress"
@@ -35,23 +38,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="307dp" />
+        tools:layout_editor_absoluteY="307dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:textColorHint="#78909C"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-        android:autofillHints="" />
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="368dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/forgotPW"
@@ -71,7 +73,8 @@
         android:textColor="#212121"
         android:textSize="12sp"
         tools:layout_editor_absoluteX="241dp"
-        tools:layout_editor_absoluteY="458dp" />
+        tools:layout_editor_absoluteY="458dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/loginButton"
@@ -82,6 +85,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="527dp" />
+        tools:layout_editor_absoluteY="527dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

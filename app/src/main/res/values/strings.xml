@@ -2,7 +2,6 @@
     <string name="app_name">FloraFolio</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="hoya">Hoya</string>
     <string name="Lavender">Lavender</string>
     <string name="Account">Account</string>
     <string name="Rose">Rose</string>
@@ -11,8 +10,11 @@
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="forgot_password">Forgot Password?</string>
-    <string name="sign_up">Sign Up</string>
+    <string name="sign_up">Sign Up!</string>
     <string name="my_plants">My Plants</string>
     <string name="upload_new_plant">Upload New Plant</string>
     <string name="hello_name">Hello, Name!</string>
+    <string name="log_in">Log in</string>
+    <string name="name">Name</string>
+    <string name="submit">Submit</string>
 </resources>

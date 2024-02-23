@@ -10,43 +10,18 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.onNavDestinationSelected
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.appbar.MaterialToolbar
-import android.util.Log
-
+import android.view.*
+import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        val toolbar = findViewById<MaterialToolbar>(R.id.toolbar)
+        val toolbar: MaterialToolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment?
+        val navController = navHostFragment?.navController
 
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as? NavHostFragment
-
-        if (navHostFragment != null) {
-            setupNavController(toolbar, navHostFragment)
-        } else {
-            Log.e("MainActivity", "NavHostFragment not found")
         }
     }
-
-    private fun setupNavController(toolbar: MaterialToolbar, navHostFragment: NavHostFragment) {
-        val navController = navHostFragment.navController
-        navController.navigate(R.id.LoginFragment)
-
-        val builder = AppBarConfiguration.Builder(navController.graph)
-        val appBarConfiguration = builder.build()
-        toolbar.setupWithNavController(navController, appBarConfiguration)
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.toolbar, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment)
-        return item.onNavDestinationSelected(navController) || super.onOptionsItemSelected(item)
-    }
-}
