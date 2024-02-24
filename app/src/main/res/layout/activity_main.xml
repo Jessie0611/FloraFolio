@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<navigation
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:id="@+id/nav"
+    app:startDestination="@+id/HomeFragment">
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.hfad.florafolio.HomeFragment"
+        android:label="Home"/>
+    <fragment
+        android:id="@+id/AccountFragment"
+        android:name="com.hfad.florafolio.AccountFragment"
+        android:label="@string/Account" />
+    <fragment
+        android:id="@+id/RoseFragment"
+        android:name="com.hfad.florafolio.RoseFragment"
+        android:label="Inbox"
+        tools:layout="@layout/fragment_rose" />
+    <fragment
+        android:id="@+id/LavenderFragment"
+        android:name="com.hfad.florafolio.LavenderFragment"
+        android:label="Help"
+        tools:layout="@layout/fragment_lavender" />
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/nav_host_fragment"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/nav" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</navigation>

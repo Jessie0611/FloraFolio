@@ -4,16 +4,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav"
-    app:startDestination="@+id/LoginFragment">
-
+    app:startDestination="@+id/HomeFragment">
     <fragment
-        android:id="@+id/LoginFragment"
-        android:name="com.hfad.florafolio.LoginFragment"
-        android:label="LoginFragment"/>
+        android:id="@+id/HomeFragment"
+        android:name="com.hfad.florafolio.HomeFragment"
+        android:label="Home"/>
     <fragment
         android:id="@+id/AccountFragment"
         android:name="com.hfad.florafolio.AccountFragment"
         android:label="@string/Account" />
+    <fragment
+        android:id="@+id/signupFragment"
+        android:label="SignUp"
+        android:name="com.hfad.florafolio.SignupFragment"/>
     <fragment
         android:id="@+id/RoseFragment"
         android:name="com.hfad.florafolio.RoseFragment"

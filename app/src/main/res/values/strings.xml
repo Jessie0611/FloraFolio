@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">FloraFolio</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Lavender">Lavender</string>
     <string name="Account">Account</string>
@@ -16,5 +15,7 @@
     <string name="hello_name">Hello, Name!</string>
     <string name="log_in">Log in</string>
     <string name="name">Name</string>
+    <string name="welcome">Welcome to FloraFolio!</string>
     <string name="submit">Submit</string>
+    <string name="intro">We cover plant diversity for all your gardening knowledge. Let\'s dig into some dirt.</string>
 </resources>

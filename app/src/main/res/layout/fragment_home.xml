@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+    <?xml version="1.0" encoding="utf-8"?>
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="192dp"
+            android:src="@drawable/flogo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="250dp"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            android:text="@string/welcome"
+            android:textColor="@color/light_pink"
+            android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="280dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="@string/intro"
+        android:textColor="@color/light_pink"
+        android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="289dp"
+            android:layout_height="259dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="415dp"
+            android:src="@drawable/garden" />
+    </FrameLayout>

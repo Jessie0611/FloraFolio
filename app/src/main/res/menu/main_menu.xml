@@ -7,15 +7,10 @@
             android:id="@+id/LavenderFragment"
             android:icon="@android:drawable/ic_menu_send"
             android:title="@string/Lavender" />
-
         <item
             android:id="@+id/RoseFragment"
             android:icon="@android:drawable/ic_menu_send"
             android:title="@string/Rose" />
-        <item
-            android:id="@+id/LoginFragment"
-            android:icon="@android:drawable/ic_menu_send"
-            android:title="@string/log_in"/>
         <item
             android:id="@+id/AccountFragment"
             android:icon="@android:drawable/ic_menu_send"
