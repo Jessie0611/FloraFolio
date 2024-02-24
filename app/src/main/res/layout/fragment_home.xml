@@ -6,39 +6,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
-    <?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
         <ImageView
             android:id="@+id/logo"
             android:layout_width="match_parent"
-            android:gravity="center_horizontal"
             android:layout_height="192dp"
             android:src="@drawable/flogo" />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:fontFamily="serif"
             android:gravity="center_horizontal"
             android:text="@string/welcome"
             android:textColor="@color/light_pink"
             android:textSize="20sp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="280dp"
-        android:fontFamily="serif"
-        android:gravity="center_horizontal"
-        android:text="@string/intro"
-        android:textColor="@color/light_pink"
-        android:textSize="20sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            android:text="@string/intro"
+            android:textColor="@color/light_pink"
+            android:textSize="20sp" />
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="289dp"
             android:layout_height="259dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="415dp"
+            android:layout_marginTop="20dp"
             android:src="@drawable/garden" />
-    </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
