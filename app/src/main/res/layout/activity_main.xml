@@ -1,27 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<navigation
+<androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav"
-    app:startDestination="@+id/HomeFragment">
-    <fragment
-        android:id="@+id/HomeFragment"
-        android:name="com.hfad.florafolio.HomeFragment"
-        android:label="Home"/>
-    <fragment
-        android:id="@+id/AccountFragment"
-        android:name="com.hfad.florafolio.AccountFragment"
-        android:label="@string/Account" />
-    <fragment
-        android:id="@+id/RoseFragment"
-        android:name="com.hfad.florafolio.RoseFragment"
-        android:label="Inbox"
-        tools:layout="@layout/fragment_rose" />
-    <fragment
-        android:id="@+id/LavenderFragment"
-        android:name="com.hfad.florafolio.LavenderFragment"
-        android:label="Help"
-        tools:layout="@layout/fragment_lavender" />
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-</navigation>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/main_menu"/>
+</androidx.drawerlayout.widget.DrawerLayout>

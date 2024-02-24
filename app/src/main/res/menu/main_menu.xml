@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
     <group android:checkableBehavior="single">
-
+        <item
+            android:id="@+id/HomeFragment"
+            android:icon="@drawable/baseline_local_florist_24"
+            android:title="@string/home"/>
         <item
             android:id="@+id/LavenderFragment"
-            android:icon="@android:drawable/ic_menu_send"
+            android:icon="@drawable/baseline_local_florist_24"
             android:title="@string/Lavender" />
         <item
             android:id="@+id/RoseFragment"
-            android:icon="@android:drawable/ic_menu_send"
+            android:icon="@drawable/baseline_local_florist_24"
             android:title="@string/Rose" />
         <item
             android:id="@+id/AccountFragment"
-            android:icon="@android:drawable/ic_menu_send"
+            android:icon="@drawable/baseline_face_24"
             android:title="@string/Account" />
 
     </group>

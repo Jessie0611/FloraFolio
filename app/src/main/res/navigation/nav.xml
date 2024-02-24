@@ -8,15 +8,18 @@
     <fragment
         android:id="@+id/HomeFragment"
         android:name="com.hfad.florafolio.HomeFragment"
-        android:label="Home"/>
+        android:label="Home"
+        tools:layout="@layout/fragment_home"/>
     <fragment
         android:id="@+id/AccountFragment"
         android:name="com.hfad.florafolio.AccountFragment"
-        android:label="@string/Account" />
+        android:label="@string/Account"
+        tools:layout="@layout/fragment_account"/>
     <fragment
         android:id="@+id/signupFragment"
         android:label="SignUp"
-        android:name="com.hfad.florafolio.SignupFragment"/>
+        android:name="com.hfad.florafolio.SignupFragment"
+        tools:layout="@layout/fragment_signup"/>
     <fragment
         android:id="@+id/RoseFragment"
         android:name="com.hfad.florafolio.RoseFragment"
@@ -27,5 +30,14 @@
         android:name="com.hfad.florafolio.LavenderFragment"
         android:label="Help"
         tools:layout="@layout/fragment_lavender" />
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"/>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/main_menu"/>
 
 </navigation>

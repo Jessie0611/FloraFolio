@@ -15,15 +15,11 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:exported="true"> <!-- Set the value based on your app's requirements -->
-            <!-- Other activity attributes -->
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
     </application>
-
 </manifest>

@@ -2,10 +2,14 @@
 <menu
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
     <item
         android:id="@+id/accountFragment"
-        android:icon="@android:drawable/sym_def_app_icon"
+        android:icon="@drawable/baseline_face_24"
         android:title="Account"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:visible="true"/>
+
 </menu>
