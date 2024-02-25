@@ -35,8 +35,10 @@
                 android:id="@+id/dynamicTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom|start"
-                android:textSize="18sp"/>
+                android:layout_marginTop="200dp"
+                android:text="@string/lavInfo"
+                android:textColor="@color/light_purple"/>
+
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
