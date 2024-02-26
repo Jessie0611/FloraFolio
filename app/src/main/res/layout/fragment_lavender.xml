@@ -7,48 +7,22 @@
     android:layout_height="match_parent"
     tools:context=".LavenderFragment">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout"
+    <ImageView
+        android:id="@+id/imageViewLav"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
->
-
-        <com.google.android.material.appbar.CollapsingToolbarLayout
-            android:id="@+id/collapsingToolbarLayout"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed">
-
-            <ImageView
-                android:id="@+id/imageViewLav"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:scaleType="centerCrop"
-                android:src="@drawable/lavender"
-                app:layout_collapseMode="parallax"/>
-
-        </com.google.android.material.appbar.CollapsingToolbarLayout>
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
-    </androidx.core.widget.NestedScrollView>
+        android:layout_height="243dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/lavender"
+        app:layout_collapseMode="parallax" />
 
     <TextView
         android:id="@+id/dynamicTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:textSize="16sp"
-        android:text="@string/lavInfo"
-        android:textColor="@color/light_purple" />
-
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        app:layout_collapseMode="pin" />
+        android:layout_height="443dp"
+        android:layout_marginTop="250dp"
+        android:text="@string/lavInfo"
+        android:textColor="@color/light_purple"
+        android:textSize="18sp" />
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

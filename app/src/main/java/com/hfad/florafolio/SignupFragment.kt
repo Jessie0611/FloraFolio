@@ -15,11 +15,10 @@ class SignupFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_signup, container, false)
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val submitButton = view.findViewById<Button>(R.id.submitButton)
 
+        val submitButton = view.findViewById<Button>(R.id.submitButton)
         submitButton.setOnClickListener {
             findNavController().navigate(R.id.accountFragment)
         }
