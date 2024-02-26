@@ -7,22 +7,23 @@
     android:layout_height="match_parent"
     tools:context=".AccountFragment">
 
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="162dp"
+        tools:src="@drawable/profile" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="20dp"
         android:text="@string/hello_name"
         android:textSize="25sp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:src="@tools:sample/avatars" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="20dp"
         android:text="@string/my_plants"
         android:textSize="20sp" />
 
@@ -30,14 +31,16 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="270dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp"
         android:text="@string/upload_new_plant" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="330dp"
-        tools:src="@drawable/Plant1" />
+        android:layout_width="92dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="380dp"
+        tools:src="@drawable/plant1" />
 
 </FrameLayout>

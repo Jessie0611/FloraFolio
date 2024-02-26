@@ -11,16 +11,9 @@ import android.widget.TextView
 
 class AccountFragment : Fragment() {
 
-    private lateinit var uploadPlantButton: Button
-    private lateinit var imageView: ImageView
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_account, container, false)
-
-
-        return view
-    }
-}
+        return inflater.inflate(R.layout.fragment_account, container, false)
+    }}

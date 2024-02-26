@@ -10,16 +10,16 @@
     <ImageView
         android:id="@+id/imageViewRose"
         android:layout_width="match_parent"
-        android:layout_height="243dp"
+        android:layout_height="230dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/"
+        android:src="@drawable/roses"
         app:layout_collapseMode="parallax" />
 
     <TextView
         android:id="@+id/dynamicTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="245dp"
+        android:layout_marginTop="230dp"
         android:text="@string/roseInfo"
         android:textColor="@color/light_pink"
         android:textSize="18sp" />
