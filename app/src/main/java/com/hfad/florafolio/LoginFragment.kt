@@ -32,7 +32,7 @@ class LoginFragment : Fragment() {
         signUpButton = view.findViewById<Button>(R.id.signUp)
         loginButton = view.findViewById<Button>(R.id.loginButton)
         signUpButton.setOnClickListener {
-            findNavController().navigate(R.id.signupFragment)        }
+            findNavController().navigate(R.id.nav_signup)        }
         loginButton.setOnClickListener {
             findNavController().navigate(R.id.accountFragment)        }
 

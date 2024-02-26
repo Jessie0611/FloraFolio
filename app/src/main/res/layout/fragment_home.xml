@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout"
+    android:id="@+id/fragment_container_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
@@ -45,11 +45,11 @@
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="289dp"
-            android:layout_height="259dp"
+            android:layout_width="382dp"
+            android:layout_height="333dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:src="@drawable/garden" />
+            android:src="@drawable/flowers" />
 
     </LinearLayout>
     </FrameLayout>

@@ -5,16 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginFragment">
-        <fragment
-            android:id="@+id/nav_host_fragment"
-            android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:defaultNavHost="true"
-            app:navGraph="@navigation/nav"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="34dp" />
-
         <ImageView
             android:layout_gravity="center_horizontal"
             android:layout_width="404dp"
@@ -25,22 +15,24 @@
             android:id="@+id/emailAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="320dp"
             android:ems="10"
             android:hint="@string/e_mail_address"
             android:inputType="textEmailAddress"
-            android:layout_marginTop="320dp"
-            android:layout_gravity="center_horizontal"/>
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="380dp"
             android:autofillHints=""
             android:ems="10"
             android:hint="@string/password"
             android:inputType="textPassword"
-            android:layout_marginTop="380dp"
-            android:layout_gravity="center_horizontal"/>
+            android:minHeight="48dp" />
 
         <Button
             android:id="@+id/forgotPW"
