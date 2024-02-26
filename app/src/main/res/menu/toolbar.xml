@@ -7,9 +7,4 @@
         android:icon="@drawable/baseline_face_24"
         android:title="Account"
         app:showAsAction="always" />
-    <item
-        android:id="@+id/nav_home"
-        android:title="Home"
-        android:visible="true"/>
-
 </menu>

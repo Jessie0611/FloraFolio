@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.FloraFolio" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/light_pink</item>    </style>
+        <item name="colorPrimary">@color/light_pink</item></style>
 
     <style name="Theme.FloraFolio" parent="Base.Theme.FloraFolio" />
 </resources>

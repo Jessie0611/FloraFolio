@@ -4,7 +4,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/HomeFragment"
-            android:icon="@drawable/baseline_local_florist_24"
+            android:icon="@drawable/homeIcon"
             android:title="@string/home"/>
         <item
             android:id="@+id/LavenderFragment"
@@ -15,7 +15,7 @@
             android:icon="@drawable/baseline_local_florist_24"
             android:title="@string/Rose" />
         <item
-            android:id="@+id/AccountFragment"
+            android:id="@+id/LoginFragment"
             android:icon="@drawable/baseline_face_24"
             android:title="@string/Account" />
 

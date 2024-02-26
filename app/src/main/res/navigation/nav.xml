@@ -6,70 +6,34 @@
     android:id="@+id/nav_graph"
     app:startDestination="@+id/HomeFragment">
     <fragment
-        android:id="@+id/nav_homefrag"
+        android:id="@+id/HomeFragment"
         android:name="com.hfad.florafolio.HomeFragment"
         android:label="Home"
-        tools:layout="@layout/fragment_home">
-        <action
-            android:id="@+id/action_HomeFragment_to_signupFragment"
-            app:destination="@id/nav_signup" />
-        <action
-            android:id="@+id/action_HomeFragment_to_LavenderFragment"
-            app:destination="@id/LavenderFragment" />
-        <action
-            android:id="@+id/action_HomeFragment_to_RoseFragment"
-            app:destination="@id/RoseFragment" />
-        <action
-            android:id="@+id/action_HomeFragment_to_LoginFragment"
-            app:destination="@id/nav_login" />
-    </fragment>
+        tools:layout="@layout/fragment_home"/>
     <fragment
-        android:id="@+id/nav_account"
+        android:id="@+id/AccountFragment"
         android:name="com.hfad.florafolio.AccountFragment"
         android:label="@string/Account"
         tools:layout="@layout/fragment_account"/>
     <fragment
-        android:id="@+id/nav_login"
+        android:id="@+id/LoginFragment"
         android:name="com.hfad.florafolio.LoginFragment"
         android:label="Login"
-        tools:layout="@layout/fragment_login">
-        <action
-            android:id="@+id/action_LoginFragment_to_AccountFragment"
-            app:destination="@id/AccountFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_login"/>
     <fragment
-        android:id="@+id/nav_signup"
+        android:id="@+id/signupFragment"
         android:label="SignUp"
         android:name="com.hfad.florafolio.SignupFragment"
-        tools:layout="@layout/fragment_signup">
-        <action
-            android:id="@+id/action_signupFragment_to_AccountFragment"
-            app:destination="@id/AccountFragment" />
-        <action
-            android:id="@+id/action_signupFragment_to_AccountFragment2"
-            app:destination="@id/AccountFragment" />
-        <action
-            android:id="@+id/action_signupFragment_to_AccountFragment3"
-            app:destination="@id/AccountFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_signup"/>
     <fragment
-        android:id="@+id/nav_rose"
+        android:id="@+id/RoseFragment"
         android:name="com.hfad.florafolio.RoseFragment"
         android:label="Inbox"
         tools:layout="@layout/fragment_rose" />
     <fragment
-        android:id="@+id/nav_lav"
+        android:id="@+id/LavenderFragment"
         android:name="com.hfad.florafolio.LavenderFragment"
         android:label="Help"
         tools:layout="@layout/fragment_lavender" />
-    <item
-        android:id="@+id/nav_home"
-        android:title="Home"/>
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:menu="@menu/main_menu"/>
 
 </navigation>
