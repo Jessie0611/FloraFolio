@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
 
-class LavenderFragment : Fragment() {
+class RosemaryFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_lavender, container, false)
+        return inflater.inflate(R.layout.fragment_rosemary, container, false)
     }}

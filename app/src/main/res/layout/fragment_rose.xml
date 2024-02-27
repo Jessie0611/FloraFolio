@@ -12,8 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="230dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/roses"
-        app:layout_collapseMode="parallax" />
+        android:src="@drawable/roses"/>
 
     <TextView
         android:id="@+id/dynamicTextView"
@@ -21,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="230dp"
         android:text="@string/roseInfo"
-        android:textColor="@color/light_pink"
+        android:textColor="@color/bright_pink"
         android:textSize="18sp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -20,7 +20,7 @@ class SignupFragment : Fragment() {
 
         val submitButton = view.findViewById<Button>(R.id.submitButton)
         submitButton.setOnClickListener {
-            findNavController().navigate(R.id.accountFragment)
+            findNavController().navigate(R.id.AccountFragment)
         }
     }
 }

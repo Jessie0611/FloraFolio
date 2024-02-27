@@ -31,6 +31,11 @@
         android:label="@string/Rose"
         tools:layout="@layout/fragment_rose" />
     <fragment
+        android:id="@+id/RosemaryFragment"
+        android:name="com.hfad.florafolio.RosemaryFragment"
+        android:label="Rosemary"
+        tools:layout="@layout/fragment_rosemary" />
+    <fragment
         android:id="@+id/LavenderFragment"
         android:name="com.hfad.florafolio.LavenderFragment"
         android:label="@string/Lavender"
