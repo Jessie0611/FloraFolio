@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,40 +9,42 @@
 
     <ImageView
         android:id="@+id/profilePic"
-        android:layout_width="190dp"
-        android:layout_height="170dp"
-        tools:src="@drawable/prof" />
+        android:layout_width="130dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profile" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="135dp"
         android:text="@string/hello_name"
-        android:textSize="25sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="270dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="170dp"
         android:text="@string/my_plants"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
+    <ImageView
+        android:id="@+id/plantUploads"
+        android:layout_width="151dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="200dp"
+        android:contentDescription="@string/uploaded_plant_image"
+        android:src="@drawable/hoyaplant" />
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="380dp"
         android:text="@string/upload_new_plant" />
 
-    <ImageView
-        android:id="@+id/plantUploads"
-        android:layout_width="117dp"
-        android:layout_height="107dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="380dp"
-        tools:src="@drawable/plant" />
-
-</FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

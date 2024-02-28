@@ -5,9 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
 
 class AccountFragment : Fragment() {
 
@@ -16,4 +13,5 @@ class AccountFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_account, container, false)
-    }}
+    }
+}
